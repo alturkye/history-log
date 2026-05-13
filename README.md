@@ -12,7 +12,7 @@ Requests are made through ZeroMQ REQ socket
 * PORT: 5557
 * FORMAT: JSON Object 
 
-** Example Request ** 
+**Example Request** 
 import zmq
 context = zmq.Context()
 socket = context.socket(zmq.REQ)

@@ -13,6 +13,7 @@ Requests are made through ZeroMQ REQ socket
 * FORMAT: JSON Object 
 
 **Example Request** 
+
 import zmq
 context = zmq.Context()
 socket = context.socket(zmq.REQ)
@@ -24,7 +25,8 @@ socket.send_json({"action": "log", "messgae": "User 'name' updated their profile
 ### How to RECEIVE data 
 The service responds with a JSON object with logs returned in a list 
 
-** Example Request **
+**Example Request**
+
 socket.send_json({"action": "retrieve", "limit": 5})
 response = socket.recv_json()
 

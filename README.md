@@ -33,3 +33,5 @@ response = socket.recv_json()
 if response["status"] == "success":
     for entry in response["logs"]:
         print(f"Past Activity: {entry}")
+
+![UML.jpg](UML.jpg)

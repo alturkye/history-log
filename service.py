@@ -6,7 +6,7 @@ from datetime import datetime
 PORT = 5557
 LOG_FILE = "history_store.json"
 DEFAULT_LIMIT = 5
-MAX_LIMIT = 100
+MAX_LIMIT = 1000
 
 # initialize ZeroMQ
 context = zmq.Context()
